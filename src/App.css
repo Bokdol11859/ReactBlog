@@ -1,0 +1,28 @@
+.App{
+  text-align: center;
+}
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.black-nav{
+  background: black;
+  width: 100%;
+  display: flex;
+  color: white;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.list h2{
+  text-align: center;
+}
+.list{
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.modal{
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgb(249, 246, 243);
+}
