@@ -1,10 +1,11 @@
-.App{
+.App {
   text-align: center;
 }
 body {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.black-nav{
+.black-nav {
   background: black;
   width: 100%;
   display: flex;
@@ -13,15 +14,21 @@ body {
   font-weight: 600;
   font-size: 20px;
 }
-.list h2{
+.list h2 {
   text-align: center;
 }
-.list{
+.list {
   text-align: left;
   padding-left: 20px;
   padding-right: 20px;
 }
-.modal{
+.list .listItem {
+  user-select: none;
+}
+.list .listItem :hover {
+  cursor: pointer;
+}
+.modal {
   margin-top: 20px;
   padding: 10px;
   background-color: rgb(249, 246, 243);

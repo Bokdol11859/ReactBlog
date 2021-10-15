@@ -26,7 +26,7 @@ function App() {
       <div className="list">
         {title.map((item, i) => {
           return (
-            <div>
+            <div className="listItem">
               <h3
                 onClick={() => {
                   setClickedNum(i);
