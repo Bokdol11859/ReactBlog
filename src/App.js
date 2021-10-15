@@ -12,6 +12,7 @@ function App() {
   let [like, setLike] = useState([0, 0, 0]);
   let [clickedNum, setClickedNum] = useState(0);
   let [modal, setModal] = useState(false);
+  let [input, setInput] = useState("");
 
   //자주 바뀌지 않고, 웹앱이랑은 큰 상관이 없는건 state말고 변수 사용
   const mainTitle = "잠원역 맛집";
@@ -26,7 +27,7 @@ function App() {
       <div className="list">
         {title.map((item, i) => {
           return (
-            <div className="listItem">
+            <div className="listItem" key={i}>
               <h3
                 onClick={() => {
                   setClickedNum(i);
@@ -49,6 +50,32 @@ function App() {
           );
         })}
       </div>
+
+      <div className="publish">
+        <input
+          onChange={(e) => {
+            setInput(e.target.value);
+          }}
+        />
+        <button
+          onClick={() => {
+            let tempTitle = [...title, input];
+            let tempTime = [...time, "10월 15일 발행"];
+            let tempLike = [...like, 0];
+            setTitle(tempTitle);
+            setTime(tempTime);
+            setLike(tempLike);
+          }}
+        >
+          Submit
+        </button>
+      </div>
+
+      {/* <input
+        onChange={(e) => {
+          
+        }}
+      /> */}
 
       <button
         onClick={() => {
